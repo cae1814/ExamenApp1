@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenApp1.Pages.Circulo"
+             Title="Área del Círculo">
+        
+    <VerticalStackLayout Padding="20" Spacing="2">
+        <Label Text="Ingrese radio del Círculo:" FontSize="16" TextColor="Gray"/>
+        <Entry x:Name="txtRadio" FontSize="16" Keyboard="Numeric" TextColor="Gray" Placeholder="Radio del circulo" PlaceholderColor="#A4A4A4"/>
+        <Label Text="Resultado:"  FontSize="16" TextColor="Gray"/>
+        <Entry x:Name="txtResultado" FontSize="16" TextColor="Gray" IsReadOnly="True" Placeholder="En espera de valores..." PlaceholderColor="#A4A4A4"/>
+
+        <Grid
+            Padding="20"
+            ColumnDefinitions="Auto, Auto,Auto"
+            RowDefinitions="Auto,Auto">
+            
+            <Button x:Name="BtnEjecutar" FontSize="15" FontAttributes="Bold" Text="Ejecutar" Clicked="BtnEjecutar_Clicked" Grid.Row="1" Grid.Column="0" HorizontalOptions="CenterAndExpand" HeightRequest="45" WidthRequest="120" BackgroundColor="#2E64FE"/>
+            <Label Text="    " FontSize="16" TextColor="Gray"  Grid.Row="1" Grid.Column="1"/>
+            <Button x:Name="BtnLimpiar" FontSize="15" FontAttributes="Bold" Text="Limpiar" Clicked="BtnLimpiar_Clicked" Grid.Row="1" Grid.Column="3" HorizontalOptions="CenterAndExpand" HeightRequest="45" WidthRequest="120" BackgroundColor="#2E64FE"/>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

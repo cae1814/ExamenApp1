@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="ExamenApp1.MainPage"
+            xmlns:local="clr-namespace:ExamenApp1.Pages"
+            BarBackgroundColor="#FE642E"
+            BarTextColor="White"
+            UnselectedTabColor="#FAAC58">
+    
+    <local:Circulo Title="Area del círculo" IconImageSource="circulo.png" />
+    <local:Rectangulo Title="Area del rectángulo" IconImageSource="rectangulo.png" />
+</TabbedPage>
